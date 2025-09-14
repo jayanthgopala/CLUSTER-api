@@ -1,0 +1,254 @@
+.custom-notice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  margin: 2.5rem auto 3rem auto;
+  gap: 2.5rem 2rem;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.custom-notice-card {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid #e0e4ec;
+  padding: 1.25rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Additional card styling */
+
+.job-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #3182ce;
+}
+
+.job-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4a5568;
+}
+
+.card-company-section {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.company-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid #e0e4ec;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.job-date {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-top: 0.1rem;
+}
+
+.custom-main {
+  margin-left: 0.1rem;
+}
+
+.custom-job-title {
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.custom-desc {
+  color: #222b3a;
+  font-size: 1.01rem;
+  margin-bottom: 0.1rem;
+}
+.notice-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+  justify-content: flex-start;
+}
+
+.notice-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(24,28,46,0.06);
+  padding: 0.7rem 1rem 0.7rem 1rem;
+  min-width: 240px;
+  max-width: 270px;
+  flex: 1 1 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1.5px solid #e3eaf5;
+}
+
+.notice-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.notice-card-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e3eaf5;
+  background: #f5f9ff;
+}
+
+.notice-card-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.notice-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #181c2e;
+}
+
+.notice-card-date {
+  font-size: 0.85rem;
+  color: #5a627a;
+}
+
+.notice-card-main {
+  margin-left: 0.1rem;
+}
+
+.notice-card-job-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.1rem;
+}
+
+.notice-card-desc {
+  color: #222b3a;
+  font-size: 0.93rem;
+  margin-bottom: 0.05rem;
+}
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f5f9ff;
+  padding: 0.9rem 2.5rem;
+  border-bottom: 1px solid #e3eaf5;
+  box-shadow: 0 4px 15px rgba(24,28,46,0.06);
+}
+
+.notification-header .left {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bmsit-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* This selector is no longer needed since we replaced the icon with a logo */
+
+.notification-header .title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #181c2e;
+  margin-bottom: 0.05rem;
+}
+
+.notification-header .subtitle {
+  font-size: 0.9rem;
+  color: #5a627a;
+  margin-top: -0.05rem;
+}
+
+.notification-header .login-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.notification-header .login-btn:hover {
+  background: #1741a6;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.notification-page {
+  background: #f8faff;
+  min-height: 100vh;
+  padding-top: 0;
+}
+
+.notice-board-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 3rem 0 0.5rem 0;
+  color: #181c2e;
+  position: relative;
+}
+
+.notice-board-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 0.4rem auto 0;
+}
+
+.job-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.job-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(24,28,46,0.06);
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  border-left: 5px solid #2563eb;
+}
+
+.job-item h3 {
+  margin: 0 0 0.3rem 0;
+  font-size: 1.2rem;
+  color: #181c2e;
+}
+
+.job-item p {
+  margin: 0;
+  color: #5a627a;
+  font-size: 1rem;
+}
