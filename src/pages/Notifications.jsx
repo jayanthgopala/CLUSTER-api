@@ -60,6 +60,7 @@ const Notifications = () => {
   };
 
   const fetchJobOfferings = () => {
+    console.log('Fetching job offerings from:', `${import.meta.env.VITE_BACKEND_URL}/api/cachejobs`);
     getCacheJobs()
       .then(response => {
         console.log('cachejobs API response:', response.data);
@@ -80,7 +81,10 @@ const Notifications = () => {
         setLoading(false);
       })
       .catch(err => {
-        setError('Failed to fetch jobs');
+        console.error('Failed to fetch jobs:', err.message, err.response?.data || 'No response data');
+        console.log('Error config:', err.config);
+        setError(`Failed to fetch jobs: ${err.message}`);
+        setJobs([]);  // Set empty array on error
         setLoading(false);
       });
   };
